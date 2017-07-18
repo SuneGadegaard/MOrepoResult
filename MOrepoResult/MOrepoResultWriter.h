@@ -14,6 +14,7 @@ class MOrepoResultWriter
 private:
 	Json::Value results;
 	
+	std::string outputFilePath;
 
 	inline void requiredFiledMissing ( const std::string& field ) { throw std::runtime_error( "You haven't specified the required field: " + field + "\n" ); }
 public:
@@ -143,4 +144,6 @@ public:
 	 * \note This entry may be used as you like. It could e.g. contain an object with more detailed entries about the experiment.
 	 */
 	void setMisc ( std::string& misc ) { results["misc"] = misc; }
+
+	void setOutputFilePath ( std::string& outputPath ) { outputFilePath = outputPath; }
 };

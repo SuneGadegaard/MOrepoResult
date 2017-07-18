@@ -1,6 +1,6 @@
 #include"MOrepoResultWriter.h"
 
-MOrepoResultWriter::MOrepoResultWriter ( )
+MOrepoResultWriter::MOrepoResultWriter ( ) : outputFilePath ("")
 {
 
 }
@@ -9,10 +9,16 @@ void MOrepoResultWriter::writeFile ( )
 {
 	try
 	{
-		std::string outputFile ( "./result.json" );
+		
 		std::ofstream outputStream;
-		outputStream.open ( outputFile );
-
+		if ( "" == outputFilePath ) 
+		{
+			outputStream.open ( "./results.json" );
+		}
+		else
+		{
+			outputStream.open ( outputFilePath );
+		}
 
 		// Check if all the required fields are there
 		if ( !results.isMember ( "version" ) )			requiredFiledMissing ( "version" );
@@ -33,6 +39,8 @@ void MOrepoResultWriter::writeFile ( )
 
 		Json::StyledWriter Fw;
 		outputStream << Fw.write ( results );
+		outputStream.close ( );
+
 	}
 	catch ( std::runtime_error& re )
 	{

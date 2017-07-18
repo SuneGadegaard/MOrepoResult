@@ -44,6 +44,17 @@ int main ( )
 	aString = "Results from the paper 'A bi-objective approach to discrete cost-bottleneck location problems' by Gadegaard, Klose, Nielsen, Annals of Operations Research, 2016.";
 	MOwriter.setComments ( aString );
 
+	MOwriter.setSupportedCardinality ( 3 );
+
+	MOwriter.setExtremeSupportedCardinality ( 3 );
+
+
+	aString = "This is the miscellaneous entry.";
+	MOwriter.setMisc ( aString );
+
+	aString = "./Gadegaard16_UFLP_Klose_p01_0_results.json";
+	MOwriter.setOutputFilePath ( aString );
+
 	MOwriter.writeFile ( );
 	return 0;
 }
