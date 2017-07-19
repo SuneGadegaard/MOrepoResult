@@ -1,0 +1,284 @@
+\hypertarget{class_m_orepo_result_writer}{}\section{M\+Orepo\+Result\+Writer Class Reference}
+\label{class_m_orepo_result_writer}\index{M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_m_orepo_result_writer_ab1ed18edc6b5da8e56716da09c7fdb28}\label{class_m_orepo_result_writer_ab1ed18edc6b5da8e56716da09c7fdb28}} 
+void {\bfseries write\+File} ()
+\item 
+void \hyperlink{class_m_orepo_result_writer_a592ba40e1ff29b5734056a06b99a5c83}{set\+Version} (std\+::string \&version)
+\begin{DoxyCompactList}\small\item\em Sets the version of the resultfile. \end{DoxyCompactList}\item 
+void \hyperlink{class_m_orepo_result_writer_ac7d7814f7bb9716a46101e22fc38c1da}{set\+Instance\+Name} (std\+::string \&instance\+Name)
+\item 
+void \hyperlink{class_m_orepo_result_writer_adb06e067ac54ccfd2af8a5fdc53957dd}{set\+Contribution\+Name} (std\+::string \&contribution\+Name)
+\begin{DoxyCompactList}\small\item\em Sets the name of the contribution. \end{DoxyCompactList}\item 
+void \hyperlink{class_m_orepo_result_writer_a1135d9cfb96df6420f178e02b11323ff}{set\+Objectives} (int objectives)
+\item 
+void \hyperlink{class_m_orepo_result_writer_a31f71009c36802c9543790e3b57dfad6}{set\+Objective\+Types} (std\+::vector$<$ std\+::string $>$ \&types)
+\begin{DoxyCompactList}\small\item\em Sets the objective types. \end{DoxyCompactList}\item 
+void \hyperlink{class_m_orepo_result_writer_a6c67d6025d87c81e261bfbf051e71c89}{set\+Directions} (std\+::vector$<$ std\+::string $>$ \&directions)
+\begin{DoxyCompactList}\small\item\em Sets the directions of the objective functions. \end{DoxyCompactList}\item 
+void \hyperlink{class_m_orepo_result_writer_acfb0a96e01d3f5ed405d24f2ce0b1c3e}{set\+Optimal} (bool is\+Optimal)
+\item 
+void \hyperlink{class_m_orepo_result_writer_af1c8ffb740f29485e1132d65935ab9a1}{set\+Cardinality} (int cardinality)
+\item 
+void \hyperlink{class_m_orepo_result_writer_aca99e0483a9af6c31557f678917b5ee3}{set\+Points} (std\+::vector$<$ std\+::vector$<$ double $>$$>$ \&points, std\+::vector$<$ std\+::string $>$ \&types)
+\item 
+void \hyperlink{class_m_orepo_result_writer_aaf7016f6cb3b0f2712c09a8394d0f91a}{set\+Valid} (bool valid)
+\begin{DoxyCompactList}\small\item\em Sets the validity of the solution to either true or false. \end{DoxyCompactList}\item 
+void \hyperlink{class_m_orepo_result_writer_a25d3f1385b1062e5ff94e02019033df7}{set\+Execution\+Time} (double execution\+Time)
+\begin{DoxyCompactList}\small\item\em Sets the execution time. \end{DoxyCompactList}\item 
+void \hyperlink{class_m_orepo_result_writer_a8fbabd8b91249fa93119c45075d7b478}{set\+Machine\+Specs} (std\+::string \&machine\+Specs)
+\begin{DoxyCompactList}\small\item\em Sets the machine specifics. \end{DoxyCompactList}\item 
+void \hyperlink{class_m_orepo_result_writer_ad88bdad7c191a3ac3db5456fc03cf1e6}{set\+Comments} (std\+::string \&comments)
+\item 
+void \hyperlink{class_m_orepo_result_writer_aa7392328b02fd0e1c9edcbb16e4d47df}{set\+Supported\+Cardinality} (int supp\+Card)
+\item 
+void \hyperlink{class_m_orepo_result_writer_a5d8fb239afcead1e6eb3fef1b0313ca0}{set\+Extreme\+Supported\+Cardinality} (int ext\+Card)
+\item 
+void \hyperlink{class_m_orepo_result_writer_a4b96d6797c67055383c8692c9d907dd9}{set\+Misc} (std\+::string \&misc)
+\item 
+void \hyperlink{class_m_orepo_result_writer_a9ceed0e69181fb4352084c53d233743c}{set\+Output\+File\+Path} (std\+::string \&output\+Path)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_m_orepo_result_writer_af1c8ffb740f29485e1132d65935ab9a1}\label{class_m_orepo_result_writer_af1c8ffb740f29485e1132d65935ab9a1}} 
+\index{M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}!set\+Cardinality@{set\+Cardinality}}
+\index{set\+Cardinality@{set\+Cardinality}!M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}}
+\subsubsection{\texorpdfstring{set\+Cardinality()}{setCardinality()}}
+{\footnotesize\ttfamily void M\+Orepo\+Result\+Writer\+::set\+Cardinality (\begin{DoxyParamCaption}\item[{int}]{cardinality }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the cardinality of the non--dominated frontier 
+\begin{DoxyParams}{Parameters}
+{\em cardinality} & integer specifying the number of points on the efficient frontier. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_m_orepo_result_writer_ad88bdad7c191a3ac3db5456fc03cf1e6}\label{class_m_orepo_result_writer_ad88bdad7c191a3ac3db5456fc03cf1e6}} 
+\index{M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}!set\+Comments@{set\+Comments}}
+\index{set\+Comments@{set\+Comments}!M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}}
+\subsubsection{\texorpdfstring{set\+Comments()}{setComments()}}
+{\footnotesize\ttfamily void M\+Orepo\+Result\+Writer\+::set\+Comments (\begin{DoxyParamCaption}\item[{std\+::string \&}]{comments }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the comments entry 
+\begin{DoxyParams}{Parameters}
+{\em comments} & reference to a string. Contains the comment that should be attached to the result file. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_m_orepo_result_writer_adb06e067ac54ccfd2af8a5fdc53957dd}\label{class_m_orepo_result_writer_adb06e067ac54ccfd2af8a5fdc53957dd}} 
+\index{M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}!set\+Contribution\+Name@{set\+Contribution\+Name}}
+\index{set\+Contribution\+Name@{set\+Contribution\+Name}!M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}}
+\subsubsection{\texorpdfstring{set\+Contribution\+Name()}{setContributionName()}}
+{\footnotesize\ttfamily void M\+Orepo\+Result\+Writer\+::set\+Contribution\+Name (\begin{DoxyParamCaption}\item[{std\+::string \&}]{contribution\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the name of the contribution. 
+
+Sets the contribution name. It should be a string with the name of the contribution in which the instances and results have been published. 
+\begin{DoxyParams}{Parameters}
+{\em contribution\+Name} & reference to a string. Contains the name of the constribution, e.\+g. \char`\"{}\+Pedersen08\char`\"{}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_m_orepo_result_writer_a6c67d6025d87c81e261bfbf051e71c89}\label{class_m_orepo_result_writer_a6c67d6025d87c81e261bfbf051e71c89}} 
+\index{M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}!set\+Directions@{set\+Directions}}
+\index{set\+Directions@{set\+Directions}!M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}}
+\subsubsection{\texorpdfstring{set\+Directions()}{setDirections()}}
+{\footnotesize\ttfamily void M\+Orepo\+Result\+Writer\+::set\+Directions (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$ \&}]{directions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the directions of the objective functions. 
+
+Sets the directions of the objective functions. The directions can either be \char`\"{}min\char`\"{} or \char`\"{}max\char`\"{}. 
+\begin{DoxyParams}{Parameters}
+{\em directions} & reference to a vector of strings. If for example there are three objective functions where the two first are of the minimization-\/kind and the last is a maximization, we should specify a vector \{ \char`\"{}min\char`\"{} , \char`\"{}min\char`\"{} , \char`\"{}max\char`\"{} \} as the function argument. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_m_orepo_result_writer_a25d3f1385b1062e5ff94e02019033df7}\label{class_m_orepo_result_writer_a25d3f1385b1062e5ff94e02019033df7}} 
+\index{M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}!set\+Execution\+Time@{set\+Execution\+Time}}
+\index{set\+Execution\+Time@{set\+Execution\+Time}!M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}}
+\subsubsection{\texorpdfstring{set\+Execution\+Time()}{setExecutionTime()}}
+{\footnotesize\ttfamily void M\+Orepo\+Result\+Writer\+::set\+Execution\+Time (\begin{DoxyParamCaption}\item[{double}]{execution\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the execution time. 
+
+Sets the execution time, that is, the time in seconds it took to generate the solution contained in the results file. 
+\begin{DoxyParams}{Parameters}
+{\em execution\+Time} & double containing the execution time in seconds. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_m_orepo_result_writer_a5d8fb239afcead1e6eb3fef1b0313ca0}\label{class_m_orepo_result_writer_a5d8fb239afcead1e6eb3fef1b0313ca0}} 
+\index{M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}!set\+Extreme\+Supported\+Cardinality@{set\+Extreme\+Supported\+Cardinality}}
+\index{set\+Extreme\+Supported\+Cardinality@{set\+Extreme\+Supported\+Cardinality}!M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}}
+\subsubsection{\texorpdfstring{set\+Extreme\+Supported\+Cardinality()}{setExtremeSupportedCardinality()}}
+{\footnotesize\ttfamily void M\+Orepo\+Result\+Writer\+::set\+Extreme\+Supported\+Cardinality (\begin{DoxyParamCaption}\item[{int}]{ext\+Card }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the cardinality of the set of extreme supported non--dominated solutions 
+\begin{DoxyParams}{Parameters}
+{\em ext\+Card} & integer containing the number of extreme supported non--dominated solutions. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_m_orepo_result_writer_ac7d7814f7bb9716a46101e22fc38c1da}\label{class_m_orepo_result_writer_ac7d7814f7bb9716a46101e22fc38c1da}} 
+\index{M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}!set\+Instance\+Name@{set\+Instance\+Name}}
+\index{set\+Instance\+Name@{set\+Instance\+Name}!M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}}
+\subsubsection{\texorpdfstring{set\+Instance\+Name()}{setInstanceName()}}
+{\footnotesize\ttfamily void M\+Orepo\+Result\+Writer\+::set\+Instance\+Name (\begin{DoxyParamCaption}\item[{std\+::string \&}]{instance\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the name of the instance for which the result file contains information 
+\begin{DoxyParams}{Parameters}
+{\em instance\+Name} & reference to a string containing the name of the instance for which the results are for. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_m_orepo_result_writer_a8fbabd8b91249fa93119c45075d7b478}\label{class_m_orepo_result_writer_a8fbabd8b91249fa93119c45075d7b478}} 
+\index{M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}!set\+Machine\+Specs@{set\+Machine\+Specs}}
+\index{set\+Machine\+Specs@{set\+Machine\+Specs}!M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}}
+\subsubsection{\texorpdfstring{set\+Machine\+Specs()}{setMachineSpecs()}}
+{\footnotesize\ttfamily void M\+Orepo\+Result\+Writer\+::set\+Machine\+Specs (\begin{DoxyParamCaption}\item[{std\+::string \&}]{machine\+Specs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the machine specifics. 
+
+Sets the specs of the machine used to carry out the experiments, e.\+g. \char`\"{}\+Intel Core i7-\/4785\+T 2.\+2 G\+Hz, 16 G\+B R\+A\+M, Linux Ubuntu 64bit\char`\"{} 
+\begin{DoxyParams}{Parameters}
+{\em machine\+Specs} & reference to a string. Contains the specs of the machine used to perform the experiments. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_m_orepo_result_writer_a4b96d6797c67055383c8692c9d907dd9}\label{class_m_orepo_result_writer_a4b96d6797c67055383c8692c9d907dd9}} 
+\index{M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}!set\+Misc@{set\+Misc}}
+\index{set\+Misc@{set\+Misc}!M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}}
+\subsubsection{\texorpdfstring{set\+Misc()}{setMisc()}}
+{\footnotesize\ttfamily void M\+Orepo\+Result\+Writer\+::set\+Misc (\begin{DoxyParamCaption}\item[{std\+::string \&}]{misc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the misc entry 
+\begin{DoxyParams}{Parameters}
+{\em misc} & reference to a string containing the misc that should be attached to the result file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This entry may be used as you like. It could e.\+g. contain an object with more detailed entries about the experiment. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_m_orepo_result_writer_a1135d9cfb96df6420f178e02b11323ff}\label{class_m_orepo_result_writer_a1135d9cfb96df6420f178e02b11323ff}} 
+\index{M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}!set\+Objectives@{set\+Objectives}}
+\index{set\+Objectives@{set\+Objectives}!M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}}
+\subsubsection{\texorpdfstring{set\+Objectives()}{setObjectives()}}
+{\footnotesize\ttfamily void M\+Orepo\+Result\+Writer\+::set\+Objectives (\begin{DoxyParamCaption}\item[{int}]{objectives }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the number of objectives 
+\begin{DoxyParams}{Parameters}
+{\em objectives} & integer specififying the number of objective functions of the multiobjective optimization problem. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_m_orepo_result_writer_a31f71009c36802c9543790e3b57dfad6}\label{class_m_orepo_result_writer_a31f71009c36802c9543790e3b57dfad6}} 
+\index{M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}!set\+Objective\+Types@{set\+Objective\+Types}}
+\index{set\+Objective\+Types@{set\+Objective\+Types}!M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}}
+\subsubsection{\texorpdfstring{set\+Objective\+Types()}{setObjectiveTypes()}}
+{\footnotesize\ttfamily void M\+Orepo\+Result\+Writer\+::set\+Objective\+Types (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$ \&}]{types }\end{DoxyParamCaption})}
+
+
+
+Sets the objective types. 
+
+Sets the objective types to either int, float, or null (if unknown). 
+\begin{DoxyParams}{Parameters}
+{\em types} & reference to a vector of strings containing the type of each objective. That is if the i\textquotesingle{}th objective is integral, then obj\+Type\mbox{[}i\mbox{]} = \char`\"{}int\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+if the function \char`\"{}set\+Objectives()\char`\"{} has been called prior to calling set\+Objective\+Types, and the number of objectives does not equal the lenght of the vector \char`\"{}types\char`\"{}, a runtime error is thrown. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_m_orepo_result_writer_acfb0a96e01d3f5ed405d24f2ce0b1c3e}\label{class_m_orepo_result_writer_acfb0a96e01d3f5ed405d24f2ce0b1c3e}} 
+\index{M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}!set\+Optimal@{set\+Optimal}}
+\index{set\+Optimal@{set\+Optimal}!M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}}
+\subsubsection{\texorpdfstring{set\+Optimal()}{setOptimal()}}
+{\footnotesize\ttfamily void M\+Orepo\+Result\+Writer\+::set\+Optimal (\begin{DoxyParamCaption}\item[{bool}]{is\+Optimal }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Specifies whether the solution is an optimal solution to the specific instance or not. 
+\begin{DoxyParams}{Parameters}
+{\em is\+Optimal} & boolean. If is\+Optimal = true, it is assumed that the solutions is optimal solution, and if its\+Optimal = false, it has not been verified optimal, or it is known to be suboptimal \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If set\+Optimal has not been called when creating the results file, the entry \char`\"{}optimal\char`\"{} is set to null. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_m_orepo_result_writer_a9ceed0e69181fb4352084c53d233743c}\label{class_m_orepo_result_writer_a9ceed0e69181fb4352084c53d233743c}} 
+\index{M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}!set\+Output\+File\+Path@{set\+Output\+File\+Path}}
+\index{set\+Output\+File\+Path@{set\+Output\+File\+Path}!M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}}
+\subsubsection{\texorpdfstring{set\+Output\+File\+Path()}{setOutputFilePath()}}
+{\footnotesize\ttfamily void M\+Orepo\+Result\+Writer\+::set\+Output\+File\+Path (\begin{DoxyParamCaption}\item[{std\+::string \&}]{output\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the output file path
+
+Sets the output file path. If this function is not called before calling write\+File(), then the output file will be \char`\"{}./results.\+json\char`\"{}. 
+\begin{DoxyParams}{Parameters}
+{\em output\+Path} & reference to a string containing the path (relative or absolute) to the output file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If the file specified by the output\+Path does not exist, then the file will be created. If it does exist, then the file content will be overwritten. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_m_orepo_result_writer_aca99e0483a9af6c31557f678917b5ee3}\label{class_m_orepo_result_writer_aca99e0483a9af6c31557f678917b5ee3}} 
+\index{M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}!set\+Points@{set\+Points}}
+\index{set\+Points@{set\+Points}!M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}}
+\subsubsection{\texorpdfstring{set\+Points()}{setPoints()}}
+{\footnotesize\ttfamily void M\+Orepo\+Result\+Writer\+::set\+Points (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ double $>$$>$ \&}]{points,  }\item[{std\+::vector$<$ std\+::string $>$ \&}]{types }\end{DoxyParamCaption})}
+
+Sets the points and the point types
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & reference to a vector of vectors of doubles. points\mbox{[}i\mbox{]} contains the i\textquotesingle{}th point on the frontier and points\mbox{[}i\mbox{]}\mbox{[}j\mbox{]} contains the j\textquotesingle{}th entry of the i\textquotesingle{}th non--dominated point. \\
+\hline
+{\em types} & reference to a vector of strings. Contains a specification of the type of each point. type can be either extreme supported (\char`\"{}se\char`\"{}), non-\/extreme supported (\char`\"{}sne\char`\"{}), supported (may be extreme or non--extreme) (\char`\"{}s\char`\"{}), unsuported (\char`\"{}un\char`\"{}) or if this information is unknown (\char`\"{}null\char`\"{}). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_m_orepo_result_writer_aa7392328b02fd0e1c9edcbb16e4d47df}\label{class_m_orepo_result_writer_aa7392328b02fd0e1c9edcbb16e4d47df}} 
+\index{M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}!set\+Supported\+Cardinality@{set\+Supported\+Cardinality}}
+\index{set\+Supported\+Cardinality@{set\+Supported\+Cardinality}!M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}}
+\subsubsection{\texorpdfstring{set\+Supported\+Cardinality()}{setSupportedCardinality()}}
+{\footnotesize\ttfamily void M\+Orepo\+Result\+Writer\+::set\+Supported\+Cardinality (\begin{DoxyParamCaption}\item[{int}]{supp\+Card }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the cardinality of the set of supported non--dominated solutions 
+\begin{DoxyParams}{Parameters}
+{\em supp\+Card} & integer containing the number of supported non--dominated solutions. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_m_orepo_result_writer_aaf7016f6cb3b0f2712c09a8394d0f91a}\label{class_m_orepo_result_writer_aaf7016f6cb3b0f2712c09a8394d0f91a}} 
+\index{M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}!set\+Valid@{set\+Valid}}
+\index{set\+Valid@{set\+Valid}!M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}}
+\subsubsection{\texorpdfstring{set\+Valid()}{setValid()}}
+{\footnotesize\ttfamily void M\+Orepo\+Result\+Writer\+::set\+Valid (\begin{DoxyParamCaption}\item[{bool}]{valid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the validity of the solution to either true or false. 
+
+Sets the validity of the solution to either true or false. If valid is false, the solution might be in conflict with another solution on M\+Orepo. This will be sorted out eventually. 
+\begin{DoxyParams}{Parameters}
+{\em valid} & boolean. If true, the solution is not in conflict with other known solutions. If false, it may be in conflict with a known solution. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_m_orepo_result_writer_a592ba40e1ff29b5734056a06b99a5c83}\label{class_m_orepo_result_writer_a592ba40e1ff29b5734056a06b99a5c83}} 
+\index{M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}!set\+Version@{set\+Version}}
+\index{set\+Version@{set\+Version}!M\+Orepo\+Result\+Writer@{M\+Orepo\+Result\+Writer}}
+\subsubsection{\texorpdfstring{set\+Version()}{setVersion()}}
+{\footnotesize\ttfamily void M\+Orepo\+Result\+Writer\+::set\+Version (\begin{DoxyParamCaption}\item[{std\+::string \&}]{version }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the version of the resultfile. 
+
+Sets the version of the results file using the provided string 
+\begin{DoxyParams}{Parameters}
+{\em version} & reference to a string. If the version is 5.\+4 the input should be a string \char`\"{}5.\+4\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+M\+Orepo\+Result\+Writer.\+h\item 
+M\+Orepo\+Result\+Writer.\+cpp\end{DoxyCompactItemize}

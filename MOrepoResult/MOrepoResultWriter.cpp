@@ -125,7 +125,7 @@ void MOrepoResultWriter::setPoints ( std::vector<std::vector<double>>& points, s
 			int objIndex = 1;
 			for ( auto objIt = pointsIt->begin ( ); objIt != pointsIt->end ( ); ++objIt )
 			{
-				std::string z ( "z" + std::to_string(objIndex));
+				std::string z ( "z" + MOrepo::MOrepo_to_string(objIndex));
 				aPoint[z] = *objIt;
 				++objIndex;
 			}

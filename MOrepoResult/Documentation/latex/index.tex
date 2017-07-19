@@ -1,0 +1,123 @@
+\begin{DoxyAuthor}{Author}
+Sune Lauth Gadegaard 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+1
+\end{DoxyVersion}
+\hypertarget{index_License}{}\section{License}\label{index_License}
+Copyright 2015, Sune Lauth Gadegaard. This program is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+
+You should have received a copy of the G\+NU General Public License along with this program. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}.
+
+If you use the software in any academic work, please make a reference to
+
+``\+An appropriate reference should go here!\textquotesingle{}\textquotesingle{}  
+ \section{Description}
+
+ This software provides a "converter" that given appropritate input generates a result file compatible witht format used on \href{https://github.com/MCDMSociety}{MOrepo}.
+ The software basically consists of a single class "MOrepoResultWriter". After constructing an object of the class, the simple "set" methods should be used to set the appropriate
+ entries, and finally, after setting atleast all required entries and the output file path, the \texttt{writeFile ( )} function should be called.
+ \hypertarget{index_Compiling}{}\section{Compiling}\label{index_Compiling}
+The codes were compiled using the Visual Studio 2015 compiler on a Windows 10 machine. The following flags were used\+: /\+W3 /\+Ox /std\+:\mbox{[}c++14$\vert$c++latest\mbox{]}
+
+ 
+   \section{Example of usage}
+   This section contains an example showing how the \texttt{converter} class can be used to generate a MOrepo compatible json file. In this example we assume the instance
+   is named "instance1", that the contribution is "Foo et al. 2017", and that the class dataReader has the appropriate get methods.
+
+  \begin{lstlisting}
+      // main.cpp
+    #include"converter.h"
+    #include"dataReader.h" // Assume you have written this yourself
+    #include<vector>
+    int main(int argc, char** argv){
+        try{
+            std::string aString;
+            MOrepoResultWriter MOwriter = MOrepoResultWriter ( );
+
+            aString = "1.0";
+            MOwriter.setVersion ( aString );
+
+            aString = "Gadegaard16_UFLP_Klose_p01_0";
+            MOwriter.setInstanceName ( aString );
+
+            aString = "Gadegaard16";
+            MOwriter.setContributionName ( aString );
+
+            MOwriter.setObjectives ( 2 );
+
+            std::vector<std::string> objTypes = { "float" , "int" };
+            MOwriter.setObjectiveTypes ( objTypes );
+
+            std::vector<std::string> directions = { "min" , "min" };
+            MOwriter.setDirections ( directions );
+
+            MOwriter.setOptimal ( true );
+
+            MOwriter.setCardinality ( 6 );
+
+            std::vector<std::vector<double>> points = { { 28463.2 , 92 }, { 28549.6 , 72 }, 
+                                                        { 28550.5 , 69 }, { 28585.8 , 65 }, 
+                                                        { 28606.2 , 60 } , { 28619.7 , 57} };
+            std::vector<std::string> types = { "null","null", "null", "null", "null", "null" };
+            MOwriter.setPoints ( points, types );
+
+            MOwriter.setValid ( true );
+
+            MOwriter.setExecutionTime ( 13.274200 );
+   
+            aString = "Intel Core i7-4785T 2.2 GHz, 16 GB RAM, Linux Ubuntu 64bit";
+            MOwriter.setMachineSpecs ( aString );
+
+            aString = "Results from the paper 
+                      'A bi-objective approach to discrete cost-bottleneck location problems' 
+                       by Gadegaard, Klose, Nielsen, Annals of Operations Research, 2016.";
+            MOwriter.setComments ( aString );
+
+            MOwriter.setSupportedCardinality ( 3 );
+
+            MOwriter.setExtremeSupportedCardinality ( 3 );
+
+
+            aString = "This is the miscellaneous entry.";
+            MOwriter.setMisc ( aString );
+
+            aString = "./Gadegaard16_UFLP_Klose_p01_0_results.json";
+            MOwriter.setOutputFilePath ( aString );
+
+            MOwriter.writeFile ( );
+            return 0;
+        }
+        catch ( std::runtime_error& re )
+        {
+            std::cerr << re.what () << "\n";
+        }
+        catch(std::exception &e)
+        {
+            std::cerr << "Exception: " << e.what() << "\n";
+        }
+        catch(...)
+        {
+            std::cerr << "An unexpected exception was thrown. Caught in main.\n";
+        }
+    }
+  \end{lstlisting}
+
+
+ 
+ \section{Change log for MOrepoResultWriter.h and MOrepoResultWriter.cpp}
+ \begin{center}
+     \begin{tabularx}{\textwidth}{llr X}\toprule
+        FILE:          &   \multicolumn{3}{l}{MOrepoResultWriter.h and MOrepoResultWriter.cpp}\\
+        Version:       &   \multicolumn{3}{l}{1.0.1}\\
+        \cmidrule{1-3}\\
+        CHANGE LOG:    &   DATE         &   VER.-NO.    &   CHANGES MADE\\ \midrule
+                       &   2017--07--01    &   1.0.0       & First implementation\\
+                        &   2017--07--19    &   1.0.1       & Added setOutputFilePath function. 
+                                                          Added a patch for the std::to\_stirng function, so it now compiles using gcc 4.9.2
+                                                          The patch is in the namespace MOrepo.\\\bottomrule
+     \end{tabularx}
+ \end{center}
+  
